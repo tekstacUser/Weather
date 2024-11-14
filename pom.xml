@@ -49,6 +49,14 @@
         <plugin>
           <artifactId>maven-jar-plugin</artifactId>
           <version>3.4.2</version>
+          <configuration>
+          <archive>
+            <manifestEntries>
+              <!-- Set the main class that contains the main method -->
+              <Main-Class>com.Weather.Weather</Main-Class>
+            </manifestEntries>
+          </archive>
+        </configuration>
         </plugin>
         <plugin>
           <artifactId>maven-install-plugin</artifactId>
